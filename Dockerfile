@@ -53,6 +53,8 @@ COPY tint2rc /root/.config/tint2/
 
 COPY 1.tar.gz.partaaa /config/1.tar.gz.partaaa
 COPY 1.tar.gz.partaab /config/1.tar.gz.partaab
+COPY 1.tar.gz.partaac /config/1.tar.gz.partaac
+COPY 1.tar.gz.partaad /config/1.tar.gz.partaad
 RUN cat /config/1.tar.gz.parta* >/config/1.tar.gz
 RUN cd /config && tar -xf /config/1.tar.gz 
 
