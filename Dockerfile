@@ -51,7 +51,10 @@ RUN echo 'pref("browser.tabs.remote.autostart", false);' >> /etc/firefox/syspref
 RUN mkdir -p /root/.config/tint2
 COPY tint2rc /root/.config/tint2/
 
-
+COPY 1.tar.gz.partaaa /config/1.tar.gz.partaaa
+COPY 1.tar.gz.partaab /config/1.tar.gz.partaab
+RUN cat /config/1.tar.gz.parta* >/config/1.tar.gz
+RUN cd /config && tar -xf /config/1.tar.gz 
 
 EXPOSE 8080
 ENTRYPOINT ["/bin/bash", "-c", "/usr/bin/supervisord"]
